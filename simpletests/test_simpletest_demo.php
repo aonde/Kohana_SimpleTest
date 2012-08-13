@@ -14,7 +14,7 @@ function test_assert_true() {
   $x = TRUE;
   $this->assertTrue($x, 'Should be TRUE|%s');
 }
-
+/*
 // assertFalse($x)	Fail unless $x evaluates false
 function test_assert_false() {
   $x = FALSE;
@@ -135,6 +135,6 @@ function test_assert_equal_loose() {
 function test_assert_equal_loose_unexpected() {
   $this->assertEqual('Hello World', 0, 'Strings that do not represent a number are converted to 0 so assertEqual(\'Hello World\', 0) passes|%s');
 }
-
+*/
 
 }

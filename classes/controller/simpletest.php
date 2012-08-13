@@ -17,6 +17,7 @@ protected $config;
 
 public function before() {
   parent::before();
+  Padrao::check_isadmin();
   define('SIMPLETEST_PATH', realpath(dirname(__FILE__).'/../../simpletest').'/');
   if ( Kohana::VERSION > '3.2' ) {
     $this->config = Kohana::$config->load('simpletest');
